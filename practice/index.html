@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="box">
+    <span style="--i:1;"><img src="img/himmel.jpg" alt=""> </span>
+    <span style="--i:2;"><img src="img/frieren.jpg" alt=""> </span>
+    <span style="--i:3;"><img src="img/eisen.avif" alt=""> </span>
+    <span style="--i:4;"><img src="img/heiter.jpg" alt=""> </span>
+    
+   </div>
+
+   <script type="text/javascript">
+    let box = document.querySelector('.box');
+    window.onmousemove = function(e){
+        let x = e.clientX/3;
+        box.style.transform = "perspective(1000px) rotateY(" + x + "deg)";
+
+    }
+
+
+   </script>
+
+
+
+</body>
+</html>
